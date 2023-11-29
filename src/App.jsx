@@ -1,20 +1,11 @@
-import logo from "./logo.svg";
 import "./App.css";
-import TourList from "./components/TourList";
-import data from "./data";
 
 function App() {
-	let tours = Array.from(data);
 	return (
 		<div className='App'>
 			<header className='App-header'>
-				<img
-					src={logo}
-					className='App-logo'
-					alt='logo'
-				/>
 				<p>
-					Edit <code>src/App.js</code> and save to reload.
+					Edit <code>src/App.jsx</code> and save to reload.
 				</p>
 				<a
 					className='App-link'
@@ -25,8 +16,6 @@ function App() {
 					Learn React
 				</a>
 			</header>
-			<div></div>
-			<TourList data={tours} />
 		</div>
 	);
 }

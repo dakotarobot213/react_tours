@@ -1,14 +1,20 @@
 import React from "react";
-import {useState} from React;
+// import { useState } from "react";
 
-const GuideListing = (id, name, info, image, price) => {
+const GuideListing = ({ id, name, info, image, price, removeGuide }) => {
 	// const [guides, setGuides] = useState(data);
-	return (<div>
-    <h4>{name}</h4>
-    <h5>{price}</h5>
-    <img src={image} />
-    <p>{info}</p>
-  </div>);
+	return (
+		<div>
+			<h4>{name}</h4>
+			<h5>{price}</h5>
+			<img
+				src={image}
+				alt={name.split(" ")[2]}
+			/>
+			<p>{info}</p>
+			<button onClick={() => removeGuide(id)}></button>
+		</div>
+	);
 };
 
 export default GuideListing;

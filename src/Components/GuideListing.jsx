@@ -4,15 +4,20 @@ import React from "react";
 const GuideListing = ({ id, name, info, image, price, removeGuide }) => {
 	// const [guides, setGuides] = useState(data);
 	return (
-		<div>
-			<h4>{name}</h4>
-			<h5>{price}</h5>
-			<img
-				src={image}
-				alt={name.split(" ")[2]}
-			/>
-			<p>{info}</p>
-			<button onClick={() => removeGuide(id)}></button>
+		<div className='card'>
+			<div>
+				<h4>
+					{name} | ${price}
+				</h4>
+				<img
+					src={image}
+					alt={name.split(" ")[2]}
+				/>
+			</div>
+			<div>
+				<p>{info}</p>
+				<button onClick={() => removeGuide(id)}>Not interested</button>
+			</div>
 		</div>
 	);
 };

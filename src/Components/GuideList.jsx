@@ -24,7 +24,7 @@ const GuideList = ({ data }) => {
 					/>
 				);
 			})}
-			<button>Refresh</button>
+			<button onClick={() => resetGuides}>Refresh</button>
 		</div>
 	);
 };

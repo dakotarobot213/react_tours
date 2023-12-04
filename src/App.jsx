@@ -1,4 +1,5 @@
 import "./App.css";
+import "./Styles/css/main.css";
 import GuideList from "./Components/GuideList";
 import data from "./data";
 
@@ -19,16 +20,6 @@ function App() {
 				</a>
 			</header>
 			<GuideList data={data} />
-			{/* <div>
-				{data.map((element) => {
-					return (
-						<div key={element.id}>
-							<h4>{element.name}</h4>
-							<p>{element.info}</p>
-						</div>
-					);
-				})}
-			</div> */}
 		</div>
 	);
 }

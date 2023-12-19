@@ -1,0 +1,55 @@
+@import "./util/reset";
+@import "./util/mixins";
+@import "./util/variables";
+* {
+	color: $text-color;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 1.17em;
+}
+h5 {
+	font-size: 0.83em;
+}
+h6 {
+	font-size: 0.75em;
+}
+body {
+	// height: 1000px;
+	background-color: rgb(22, 22, 22);
+	font-family: arial;
+}
+article {
+	@include setFlex(column);
+	margin: {
+		top: 2rem;
+		left: 2rem;
+		right: 2rem;
+	}
+}
+button {
+	background-color: $primary-color-highlight;
+	border: none;
+}
+
+.tourCard {
+	padding: 1rem;
+	border: 0.621rem $primary-color solid;
+	border-radius: 4%;
+	@include setFlex(row);
+	& div {
+		gap: 4rem;
+		& p,
+		button {
+			width: 100%;
+		}
+		& img {
+			width: 100%;
+		}
+	}
+}

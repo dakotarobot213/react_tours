@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./styles/css/main.css";
 import GuideList from "./Components/GuideList";
 import data from "./data";

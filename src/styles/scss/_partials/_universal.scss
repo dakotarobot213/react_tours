@@ -24,26 +24,31 @@ body {
 	background-color: rgb(22, 22, 22);
 	font-family: arial;
 }
-article {
+button {
+	background-color: $primary-color-highlight;
+	border: none;
+}
+.guideList {
 	@include setFlex(column);
 	margin: {
 		top: 2rem;
 		left: 2rem;
 		right: 2rem;
+		bottom: 2rem;
+	}
+	& > button {
+		height: 5rem;
 	}
 }
-button {
-	background-color: $primary-color-highlight;
-	border: none;
-}
-
-.tourCard {
+.card {
 	padding: 1rem;
 	border: 0.621rem $primary-color solid;
 	border-radius: 4%;
 	@include setFlex(row);
 	& div {
-		gap: 4rem;
+		& * {
+			padding: 1rem;
+		}
 		& p,
 		button {
 			width: 100%;

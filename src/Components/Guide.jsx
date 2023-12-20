@@ -1,7 +1,7 @@
 import React from "react";
 // import { useState } from "react";
 
-const GuideListing = ({ id, name, info, image, price, removeGuide }) => {
+const Guide = ({ id, name, info, image, price, removeGuide }) => {
 	// const [guides, setGuides] = useState(data);
 	return (
 		<div className='card'>
@@ -22,7 +22,7 @@ const GuideListing = ({ id, name, info, image, price, removeGuide }) => {
 	);
 };
 
-export default GuideListing;
+export default Guide;
 
 // id: "rec6d6T3q5EBIdCfD",
 // 		name: "Best of Paris in 7 Days Tour",

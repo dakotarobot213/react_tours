@@ -1,10 +1,11 @@
 import { useState } from "react";
 import "./styles/css/main.css";
-import TourList from "./components/TourList";
+import GuideList from "./Components/GuideList";
 import data from "./data";
 
 function App() {
-	return <TourList data={data} />;
+	return <GuideList data={data} />;
 }
 
 export default App;
+/* */

@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import GuideListing from "./GuideListing";
+import Guide from "./Guide";
 
 const GuideList = ({ data }) => {
 	const [guides, setGuides] = useState(data);
@@ -14,17 +14,17 @@ const GuideList = ({ data }) => {
 	};
 
 	return (
-		<div>
+		<div className='guideList'>
 			{guides.map((dest) => {
 				return (
-					<GuideListing
+					<Guide
 						key={dest.id}
 						{...dest}
 						removeGuide={removeGuide}
 					/>
 				);
 			})}
-			<button onClick={() => resetGuides}>Refresh</button>
+			<button onClick={() => resetGuides()}>Refresh</button>
 		</div>
 	);
 };

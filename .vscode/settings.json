@@ -3,12 +3,12 @@
 		{
 			"format": "expanded",
 			"extensionName": ".css",
-			"savePath": "/src/Styles/css"
+			"savePath": "/src/styles/css"
 		},
 		{
 			"format": "compressed",
 			"extensionName": ".min.css",
-			"savePath": "/src/Styles/css"
+			"savePath": "/src/styles/css"
 		}
 	]
 }

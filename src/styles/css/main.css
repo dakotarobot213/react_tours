@@ -134,33 +134,37 @@ body {
   font-family: arial;
 }
 
-article {
-  display: flex;
-  flex-direction: column;
-  margin-top: 2rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
 button {
   background-color: #575757;
   border: none;
 }
 
-.tourCard {
+.guideList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+.guideList > button {
+  height: 5rem;
+}
+
+.card {
   padding: 1rem;
   border: 0.621rem #333333 solid;
   border-radius: 4%;
   display: flex;
   flex-direction: row;
 }
-.tourCard div {
-  gap: 4rem;
+.card div * {
+  padding: 1rem;
 }
-.tourCard div p,
-.tourCard div button {
+.card div p,
+.card div button {
   width: 100%;
 }
-.tourCard div img {
+.card div img {
   width: 100%;
 }/*# sourceMappingURL=main.css.map */
